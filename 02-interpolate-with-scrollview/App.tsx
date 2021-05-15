@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Animated, {
   useAnimatedScrollHandler,
   useSharedValue,
@@ -17,10 +16,9 @@ export default function App() {
   });
 
   return (
-    // P.S: Here you can add pagingEnabled
-    // And use this template as an onboarding
     <Animated.ScrollView
       onScroll={scrollHandler}
+      pagingEnabled
       scrollEventThrottle={16}
       horizontal
       style={styles.container}
