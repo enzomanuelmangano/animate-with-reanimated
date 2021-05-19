@@ -14,6 +14,7 @@ Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 - [00 Introduction to Reanimated v2](https://youtu.be/yz9E10Dq8Bg)
 - [01 The basics of PanGestureHandler with Reanimated](https://youtu.be/4HUreYYoE6U)
 - [02 Interpolate with ScrollView like a pro](https://youtu.be/SqwpRr7kbnQ)
+- [03 Interpolate Colors like a pro](https://youtu.be/U_V9pHnTXjA)
 
 ## Some examples
 
