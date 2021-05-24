@@ -15,6 +15,7 @@ Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 - [01 The basics of PanGestureHandler with Reanimated](https://youtu.be/4HUreYYoE6U)
 - [02 Interpolate with ScrollView like a pro](https://youtu.be/SqwpRr7kbnQ)
 - [03 Interpolate Colors like a pro](https://youtu.be/U_V9pHnTXjA) ([Medium](https://enzomanuelmangano.medium.com/interpolate-colors-like-a-pro-with-react-native-reanimated-2-253a2695cf0a))
+- [04 The basics of PinchGestureHandler](https://youtu.be/gzU-L6TIiIQ)
 
 ## Some examples
 
