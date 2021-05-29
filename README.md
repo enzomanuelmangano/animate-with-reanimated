@@ -16,6 +16,7 @@ Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 - [02 Interpolate with ScrollView like a pro](https://youtu.be/SqwpRr7kbnQ)
 - [03 Interpolate Colors like a pro](https://youtu.be/U_V9pHnTXjA) ([Medium](https://enzomanuelmangano.medium.com/interpolate-colors-like-a-pro-with-react-native-reanimated-2-253a2695cf0a))
 - [04 The basics of PinchGestureHandler](https://youtu.be/R7vyLItMQJw)
+- [05 Animate on DoubleTap Gesture](https://youtu.be/nbEmo0zLJjw)
 
 ## Some examples
 
