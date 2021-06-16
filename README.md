@@ -18,6 +18,7 @@ Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 - [04 The basics of PinchGestureHandler](https://youtu.be/R7vyLItMQJw)
 - [05 Animate on DoubleTap Gesture](https://youtu.be/nbEmo0zLJjw)
 - [06 ScrollView from Scratch with PanGestureHandler](https://youtu.be/Fd5FWxx7c48)
+- [07 ColorPicker Animation](https://youtu.be/XH35ahDm3as)
 
 ## Some examples
 
