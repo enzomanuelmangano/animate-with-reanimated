@@ -19,6 +19,7 @@ Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 - [05 Animate on DoubleTap Gesture](https://youtu.be/nbEmo0zLJjw)
 - [06 ScrollView from Scratch with PanGestureHandler](https://youtu.be/Fd5FWxx7c48)
 - [07 ColorPicker Animation](https://youtu.be/XH35ahDm3as)
+- [08 Circular Progress Bar Animation](https://youtu.be/9n2mQJ7TO6Y)
 
 ## Some examples
 
