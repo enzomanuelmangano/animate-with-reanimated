@@ -20,6 +20,7 @@ Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 - [06 ScrollView from Scratch with PanGestureHandler](https://youtu.be/Fd5FWxx7c48)
 - [07 ColorPicker Animation](https://youtu.be/XH35ahDm3as)
 - [08 Circular Progress Bar Animation](https://youtu.be/9n2mQJ7TO6Y)
+- [09 Dismiss Animation](https://youtu.be/AVS_2nzt8Do)
 
 ## Some examples
 
