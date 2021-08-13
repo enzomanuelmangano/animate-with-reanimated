@@ -2,7 +2,9 @@
 Animate with Reanimated 🐢
 </h1>
 
-![](assets/animate-with-reanimated.png)
+ <a href="https://youtu.be/yz9E10Dq8Bg" target="_blank">
+      <img src="https://raw.githubusercontent.com/enzomanuelmangano/animate-with-reanimated/main/.assets/animate-with-reanimated.png" title="animate-with-reanimated">
+  </a>
 
 Animate with Reanimated is a youtube series where I try to build from scratch simple and instructive animations with the help of the following packages:
 
