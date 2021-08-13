@@ -2,6 +2,8 @@
 Animate with Reanimated 🐢
 </h1>
 
+![](assets/animate-with-reanimated.png)
+
 Animate with Reanimated is a youtube series where I try to build from scratch simple and instructive animations with the help of the following packages:
 
 - [react-native-reanimated v2](https://docs.swmansion.com/react-native-reanimated/docs/)
@@ -20,21 +22,4 @@ Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 - [06 ScrollView from Scratch with PanGestureHandler](https://youtu.be/Fd5FWxx7c48)
 - [07 ColorPicker Animation](https://youtu.be/XH35ahDm3as)
 - [08 Circular Progress Bar Animation](https://youtu.be/9n2mQJ7TO6Y)
-- [09 Dismiss Animation](https://youtu.be/AVS_2nzt8Do)
-
-## Some examples
-
-<table align="center">
-  <tr>
-    <td valign="top">  
-      <a href="https://youtu.be/yz9E10Dq8Bg" target="_blank">
-          <img src="https://raw.githubusercontent.com/enzomanuelmangano/animate-with-reanimated/main/.assets/00-introduction-to-reanimated-2.gif" title="introduction-to-reanimated-2" float="left">
-      </a>
-    </td>
-    <td valign="top">  
-      <a href="https://youtu.be/4HUreYYoE6U" target="_blank">
-          <img src="https://raw.githubusercontent.com/enzomanuelmangano/animate-with-reanimated/main/.assets/01-pan-gesture-handler-basics.gif" title="pan gesture handler basics" float="left">
-      </a>
-    </td>
-  </tr>
-</table>
+- [09 Swipe to Delete](https://youtu.be/AVS_2nzt8Do)
