@@ -9,6 +9,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import {
+  GestureHandlerRootView,
   PanGestureHandler,
   PanGestureHandlerGestureEvent,
 } from 'react-native-gesture-handler';
@@ -61,13 +62,15 @@ export default function App() {
   });
 
   return (
-    <View style={styles.container}>
-      <View style={styles.circle}>
-        <PanGestureHandler onGestureEvent={panGestureEvent}>
-          <Animated.View style={[styles.square, rStyle]} />
-        </PanGestureHandler>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <View style={styles.circle}>
+          <PanGestureHandler onGestureEvent={panGestureEvent}>
+            <Animated.View style={[styles.square, rStyle]} />
+          </PanGestureHandler>
+        </View>
       </View>
-    </View>
+    </GestureHandlerRootView>
   );
 }
 

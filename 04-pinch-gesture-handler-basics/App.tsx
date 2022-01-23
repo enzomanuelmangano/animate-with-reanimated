@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Image, Dimensions } from 'react-native';
 import {
+  GestureHandlerRootView,
   PinchGestureHandler,
   PinchGestureHandlerGestureEvent,
 } from 'react-native-gesture-handler';
@@ -59,15 +60,17 @@ export default function App() {
   });
 
   return (
-    <PinchGestureHandler onGestureEvent={pinchHandler}>
-      <Animated.View style={{ flex: 1 }}>
-        <AnimatedImage
-          style={[{ flex: 1 }, rStyle]}
-          source={{ uri: imageUri }}
-        />
-        <Animated.View style={[styles.focalPoint, focalPointStyle]} />
-      </Animated.View>
-    </PinchGestureHandler>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <PinchGestureHandler onGestureEvent={pinchHandler}>
+        <Animated.View style={{ flex: 1 }}>
+          <AnimatedImage
+            style={[{ flex: 1 }, rStyle]}
+            source={{ uri: imageUri }}
+          />
+          <Animated.View style={[styles.focalPoint, focalPointStyle]} />
+        </Animated.View>
+      </PinchGestureHandler>
+    </GestureHandlerRootView>
   );
 }
 
