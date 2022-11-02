@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Ripple from './components/Ripple';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-export default function App() {
+function App() {
   return (
     <View style={styles.container}>
       <Ripple
@@ -16,6 +17,14 @@ export default function App() {
     </View>
   );
 }
+
+export default () => {
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <App />
+    </GestureHandlerRootView>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

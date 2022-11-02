@@ -1,6 +1,6 @@
 import { LinearGradient, LinearGradientProps } from 'expo-linear-gradient';
 import React, { useCallback } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import {
   PanGestureHandler,
   PanGestureHandlerGestureEvent,

@@ -8,7 +8,10 @@ import {
   Dimensions,
   ImageBackground,
 } from 'react-native';
-import { TapGestureHandler } from 'react-native-gesture-handler';
+import {
+  TapGestureHandler,
+  GestureHandlerRootView,
+} from 'react-native-gesture-handler';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
@@ -19,7 +22,7 @@ import Animated, {
 
 const AnimatedImage = Animated.createAnimatedComponent(Image);
 
-export default function App() {
+function App() {
   const scale = useSharedValue(0);
   const opacity = useSharedValue(1);
 
@@ -86,6 +89,14 @@ export default function App() {
     </View>
   );
 }
+
+export default () => {
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <App />
+    </GestureHandlerRootView>
+  );
+};
 
 const { width: SIZE } = Dimensions.get('window');
 

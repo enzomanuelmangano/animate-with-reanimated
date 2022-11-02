@@ -1,3 +1,4 @@
+import React, { useCallback } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Dimensions, SafeAreaView, StyleSheet, View } from 'react-native';
 import {
@@ -14,13 +15,12 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import { Feather } from '@expo/vector-icons';
-import { useCallback } from 'react';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 const THRESHOLD = SCREEN_WIDTH / 3;
 
-export default function App() {
+function App() {
   const translateX = useSharedValue(0);
 
   const panGestureEvent = useAnimatedGestureHandler<
@@ -82,26 +82,32 @@ export default function App() {
   }, []);
 
   return (
-    <GestureHandlerRootView style={{ flex: 1, backgroundColor: BACKGROUND_COLOR }}>
-      <SafeAreaView style={[styles.container, styles.safe]}>
-        <StatusBar style="inverted" />
-        <PanGestureHandler onGestureEvent={panGestureEvent}>
-          <Animated.View
-            style={[{ backgroundColor: 'white', flex: 1 }, rStyle]}
-          >
-            <Feather
-              name="menu"
-              size={32}
-              color={BACKGROUND_COLOR}
-              style={{ margin: 15, position: 'absolute' }}
-              onPress={onPress}
-            />
-          </Animated.View>
-        </PanGestureHandler>
-      </SafeAreaView>
-    </GestureHandlerRootView>
+    <SafeAreaView style={[styles.container, styles.safe]}>
+      <StatusBar style="inverted" />
+      <PanGestureHandler onGestureEvent={panGestureEvent}>
+        <Animated.View style={[{ backgroundColor: 'white', flex: 1 }, rStyle]}>
+          <Feather
+            name="menu"
+            size={32}
+            color={BACKGROUND_COLOR}
+            style={{ margin: 15, position: 'absolute' }}
+            onPress={onPress}
+          />
+        </Animated.View>
+      </PanGestureHandler>
+    </SafeAreaView>
   );
 }
+
+export default () => {
+  return (
+    <GestureHandlerRootView
+      style={{ flex: 1, backgroundColor: BACKGROUND_COLOR }}
+    >
+      <App />
+    </GestureHandlerRootView>
+  );
+};
 
 const BACKGROUND_COLOR = '#1e1e23';
 const styles = StyleSheet.create({
@@ -111,6 +117,6 @@ const styles = StyleSheet.create({
   },
   safe: {
     // workaround for the SafeAreaView in Android (use the react-native-safe-area-context package)
-    marginTop: Platform.OS === 'android' ? 30: 0
-  }
+    marginTop: Platform.OS === 'android' ? 30 : 0,
+  },
 });

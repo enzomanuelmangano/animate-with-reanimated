@@ -20,7 +20,7 @@ const AnimatedImage = Animated.createAnimatedComponent(Image);
 
 const { width, height } = Dimensions.get('window');
 
-export default function App() {
+function App() {
   const scale = useSharedValue(1);
   const focalX = useSharedValue(0);
   const focalY = useSharedValue(0);
@@ -60,19 +60,25 @@ export default function App() {
   });
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <PinchGestureHandler onGestureEvent={pinchHandler}>
-        <Animated.View style={{ flex: 1 }}>
-          <AnimatedImage
-            style={[{ flex: 1 }, rStyle]}
-            source={{ uri: imageUri }}
-          />
-          <Animated.View style={[styles.focalPoint, focalPointStyle]} />
-        </Animated.View>
-      </PinchGestureHandler>
-    </GestureHandlerRootView>
+    <PinchGestureHandler onGestureEvent={pinchHandler}>
+      <Animated.View style={{ flex: 1 }}>
+        <AnimatedImage
+          style={[{ flex: 1 }, rStyle]}
+          source={{ uri: imageUri }}
+        />
+        <Animated.View style={[styles.focalPoint, focalPointStyle]} />
+      </Animated.View>
+    </PinchGestureHandler>
   );
 }
+
+export default () => {
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <App />
+    </GestureHandlerRootView>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

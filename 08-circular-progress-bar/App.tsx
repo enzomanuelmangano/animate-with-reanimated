@@ -1,13 +1,17 @@
-import React, { useEffect } from 'react';
-import { useCallback } from 'react';
-import { Dimensions, TouchableOpacity } from 'react-native';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useCallback } from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Dimensions,
+  TouchableOpacity,
+} from 'react-native';
 import Animated, {
   useSharedValue,
   withTiming,
   useAnimatedProps,
+  useDerivedValue,
 } from 'react-native-reanimated';
-import { useDerivedValue } from 'react-native-reanimated';
 import { ReText } from 'react-native-redash';
 
 import Svg, { Circle } from 'react-native-svg';

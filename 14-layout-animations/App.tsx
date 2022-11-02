@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   ScrollView,
@@ -7,14 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import Animated, {
-  FadeIn,
-  FadeOut,
-  Layout,
-  RotateInDownLeft,
-  ZoomIn,
-  ZoomOut,
-} from 'react-native-reanimated';
+import Animated, { FadeIn, FadeOut, Layout } from 'react-native-reanimated';
 
 const LIST_ITEM_COLOR = '#1798DE';
 

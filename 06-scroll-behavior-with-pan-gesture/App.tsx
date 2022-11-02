@@ -11,6 +11,7 @@ import Animated, {
   useDerivedValue,
   useSharedValue,
   withDecay,
+  GestureHandlerRootView,
 } from 'react-native-reanimated';
 import Page, { PAGE_WIDTH } from './components/Page';
 
@@ -22,7 +23,7 @@ type ContextType = {
 
 const MAX_TRANSLATE_X = -PAGE_WIDTH * (titles.length - 1);
 
-export default function App() {
+function App() {
   const translateX = useSharedValue(0);
 
   const clampedTranslateX = useDerivedValue(() => {
@@ -64,6 +65,14 @@ export default function App() {
     </View>
   );
 }
+
+export default () => {
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <App />
+    </GestureHandlerRootView>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

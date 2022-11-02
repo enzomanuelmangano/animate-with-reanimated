@@ -6,6 +6,7 @@ import Animated, {
   useSharedValue,
 } from 'react-native-reanimated';
 import { ColorPicker } from './components/ColorPicker';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const COLORS = [
   'red',
@@ -26,7 +27,7 @@ const { width } = Dimensions.get('window');
 const CIRCLE_SIZE = width * 0.8;
 const PICKER_WIDTH = width * 0.9;
 
-export default function App() {
+function App() {
   const pickedColor = useSharedValue<string | number>(COLORS[0]);
 
   const onColorChanged = useCallback((color: string | number) => {
@@ -58,6 +59,14 @@ export default function App() {
     </>
   );
 }
+
+export default () => {
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <App />
+    </GestureHandlerRootView>
+  );
+};
 
 const styles = StyleSheet.create({
   topContainer: {

@@ -14,7 +14,7 @@ import {
   PanGestureHandlerGestureEvent,
 } from 'react-native-gesture-handler';
 
-const SIZE = 100.0;
+const SIZE = 90;
 const CIRCLE_RADIUS = SIZE * 2;
 
 type ContextType = {
@@ -22,7 +22,7 @@ type ContextType = {
   translateY: number;
 };
 
-export default function App() {
+function App() {
   const translateX = useSharedValue(0);
   const translateY = useSharedValue(0);
 
@@ -62,17 +62,23 @@ export default function App() {
   });
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <View style={styles.container}>
-        <View style={styles.circle}>
-          <PanGestureHandler onGestureEvent={panGestureEvent}>
-            <Animated.View style={[styles.square, rStyle]} />
-          </PanGestureHandler>
-        </View>
+    <View style={styles.container}>
+      <View style={styles.circle}>
+        <PanGestureHandler onGestureEvent={panGestureEvent}>
+          <Animated.View style={[styles.square, rStyle]} />
+        </PanGestureHandler>
       </View>
-    </GestureHandlerRootView>
+    </View>
   );
 }
+
+export default () => {
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <App />
+    </GestureHandlerRootView>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

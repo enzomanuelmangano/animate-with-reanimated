@@ -1,7 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useCallback, useRef, useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import {
+  ScrollView,
+  GestureHandlerRootView,
+} from 'react-native-gesture-handler';
 import ListItem from './components/ListItem';
 
 const TITLES = [
@@ -29,7 +32,7 @@ const TASKS: TaskInterface[] = TITLES.map((title, index) => ({ title, index }));
 
 const BACKGROUND_COLOR = '#FAFBFF';
 
-export default function App() {
+function App() {
   const [tasks, setTasks] = useState(TASKS);
 
   const onDismiss = useCallback((task: TaskInterface) => {
@@ -55,6 +58,14 @@ export default function App() {
     </SafeAreaView>
   );
 }
+
+export default () => {
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <App />
+    </GestureHandlerRootView>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
