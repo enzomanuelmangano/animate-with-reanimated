@@ -1,5 +1,4 @@
-import { Image, ImageProps } from 'expo-image';
-import { Dimensions, View } from 'react-native';
+import { Dimensions, ImageProps, Image } from 'react-native';
 import Animated, {
   Extrapolate,
   interpolate,
@@ -69,9 +68,10 @@ const CircularCarouselListItem: React.FC<CircularCarouselListItemProps> = ({
         {
           translateY: translateY,
         },
-        {
-          translateX: ListItemWidth / 2 + ListItemWidth,
-        },
+        // Padding left is better than translateX
+        // {
+        //   translateX: ListItemWidth / 2 + ListItemWidth,
+        // },
         {
           scale,
         },
@@ -96,11 +96,16 @@ const CircularCarouselListItem: React.FC<CircularCarouselListItemProps> = ({
         rStyle,
       ]}
     >
+      {/* 
+        I've used the React Native Image because it was crashing on Android:
+      */}
       <Image
         source={imageSrc}
         style={{
           margin: 3,
-          flex: 1,
+          height: ListItemWidth,
+          width: ListItemWidth,
+
           borderRadius: 200,
           borderWidth: 2,
           borderColor: 'white',

@@ -1,5 +1,4 @@
-import { ImageProps } from 'expo-image';
-import { FlatList, View } from 'react-native';
+import { FlatList, ImageProps } from 'react-native';
 import { CircularCarouselListItem, ListItemWidth } from './list-item';
 import { useSharedValue } from 'react-native-reanimated';
 
@@ -29,7 +28,9 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({ data }) => {
       contentContainerStyle={{
         justifyContent: 'center',
         alignItems: 'center',
-        paddingRight: 3 * ListItemWidth,
+        paddingHorizontal: 1.5 * ListItemWidth,
+        // paddingRight: 1.5 * ListItemWidth,
+        // paddingLeft: 1.5 * ListItemWidth,
       }}
       horizontal
       renderItem={({ item, index }) => {
