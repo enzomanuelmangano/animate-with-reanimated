@@ -53,7 +53,9 @@ export const SplitButton: React.FC<SplitButtonProps> = ({
   const rMainButtonStyle = useAnimatedStyle(() => {
     const mainButtonWidth = splitted
       ? SplittedButtonWidth
-      : SplittedButtonWidth * 2;
+      : // IMPORTANT: This has been fixed from the original demo, it was:
+        // SplittedButtonWidth * 2 (I forgot to add the gap between the buttons)
+        SplittedButtonWidth * 2 + gap;
     return {
       width: withTiming(mainButtonWidth),
       marginLeft: withTiming(splitted ? gap : 0),
