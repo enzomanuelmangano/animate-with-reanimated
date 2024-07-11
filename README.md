@@ -6,9 +6,9 @@ Animate with Reanimated 🐢
       <img src="https://raw.githubusercontent.com/enzomanuelmangano/animate-with-reanimated/main/.assets/animate-with-reanimated.png" title="animate-with-reanimated">
   </a>
 
-Animate with Reanimated is a youtube series where I try to build from scratch simple and instructive animations with the help of the following packages:
+Animate with Reanimated is a YouTube series where I try to build from scratch simple and instructive animations with the help of the following packages:
 
-- [react-native-reanimated v2](https://docs.swmansion.com/react-native-reanimated/docs/)
+- [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/)
 - [react-native-gesture-handler](https://docs.swmansion.com/react-native-gesture-handler/docs)
 
 Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
@@ -34,3 +34,6 @@ Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 - [16 Smooth Dropdown](https://youtu.be/LtgHWjf7BA8?si=9tYFFFLaUYScx65s)
 - [17 Circular Carousel Animation](https://youtu.be/-ZXedIjj4H8?si=5bhjBMD9Sl-6ufbT)
 - [18 Skeleton Animation](https://youtu.be/vunwBbFx_F8)
+- [19 Custom Segmented Control](https://youtu.be/RTYNKDODSfw)
+- [20 Custom Tap Gestures](https://youtu.be/DWFS_dSnJOs)
+- [21 Animated Split Button](https://youtu.be/GxkzFYI6eqI)
