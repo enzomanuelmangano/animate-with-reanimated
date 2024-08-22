@@ -3,7 +3,7 @@ import React from 'react';
 
 import { withCustomBackIcon } from './with-custom-back-icon-hoc';
 
-import IntroductionToReanimated from '../animations/00-introduction-to-reanimated-2/App';
+import IntroductionToReanimated from '../animations/00-introduction-to-reanimated/App';
 import PanGestureHandlerBasics from '../animations/01-pan-gesture-handler-basics/App';
 import InterpolateWithScrollView from '../animations/02-interpolate-with-scrollview/App';
 import InterpolateColor from '../animations/03-interpolate-color/App';
