@@ -13,7 +13,6 @@
     "@expo/metro-runtime": "~3.2.1",
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/native-stack": "^6.11.0",
-    "@shopify/react-native-skia": "1.2.3",
     "color": "^4.2.3",
     "expo": "^51.0.21",
     "expo-image": "~1.12.14",
