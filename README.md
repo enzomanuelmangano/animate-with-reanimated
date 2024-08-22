@@ -13,6 +13,16 @@ Animate with Reanimated is a YouTube series where I try to build from scratch si
 
 Sounds interesting? [Click here!](https://youtu.be/yz9E10Dq8Bg)
 
+## Would you like to support me?
+
+If you like my work and want to support me, the easiest way is to subscribe to my [YouTube channel](https://www.youtube.com/@Reactiive).
+This seems like an easy task, but it means a lot to me.
+
+### Other ways to support me and get exclusive content:
+
+- [My course (Reanimate.dev)](https://www.reanimate.dev): Are you really into animations? Fantastic! This makes two of us. Here you can access my React Native animations course and learn how to improve your animations skills.
+- [Patreon](https://www.patreon.com/reactiive): Every week, since a couple of years, I've been sharing a new special animation with my Patrons. If you want to access all of them, you can become a Patron.
+
 ## Available Tutorials
 
 - [00 Introduction to Reanimated v2](https://youtu.be/yz9E10Dq8Bg)
