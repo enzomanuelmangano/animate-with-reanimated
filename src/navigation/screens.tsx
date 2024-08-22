@@ -27,6 +27,7 @@ import ShakeAnimation from '../animations/20-shake-animation/App';
 import AnimatedSplitButton from '../animations/21-animated-split-button/App';
 import ExploreInterpolateWithStackedCards from '../animations/22-stacked-cards/App';
 import CheckboxInteractions from '../animations/23-checkbox-interactions/App';
+import StoryListUI from '../animations/24-story-list/App';
 
 import { Dimensions } from 'react-native';
 
@@ -211,6 +212,13 @@ const Screens = [
     component: CheckboxInteractions,
     backIconDark: false,
     iconMarginTop: WindowHeight - 200,
+    icon: () => <AntDesign name="smileo" {...DefaultIconProps} />,
+  },
+  {
+    name: 'Story List UI',
+    route: 'StoryListUI',
+    component: StoryListUI,
+    backIconDark: false,
     icon: () => <AntDesign name="smileo" {...DefaultIconProps} />,
   },
 ].map((item, index) => {
