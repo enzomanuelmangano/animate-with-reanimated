@@ -50,3 +50,4 @@ This seems like an easy task, but it means a lot to me.
 - [22 Animated Stacked Cards](https://youtu.be/8_hvNoZJsc8)
 - [23 Checkbox Interactions](https://youtu.be/NPq_MFLnQrQ)
 - [24 Story List UI](https://youtu.be/NNRym_f8JsA)
+- [25 Pager Dots](https://youtu.be/04K3wPK2yC8)

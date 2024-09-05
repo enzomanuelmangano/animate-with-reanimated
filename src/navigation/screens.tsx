@@ -28,6 +28,7 @@ import AnimatedSplitButton from '../animations/21-animated-split-button/App';
 import ExploreInterpolateWithStackedCards from '../animations/22-stacked-cards/App';
 import CheckboxInteractions from '../animations/23-checkbox-interactions/App';
 import StoryListUI from '../animations/24-story-list/App';
+import PagerDots from '../animations/25-pager-dots/App';
 
 import { Dimensions } from 'react-native';
 
@@ -218,6 +219,13 @@ const Screens = [
     name: 'Story List UI',
     route: 'StoryListUI',
     component: StoryListUI,
+    backIconDark: false,
+    icon: () => <AntDesign name="smileo" {...DefaultIconProps} />,
+  },
+  {
+    name: 'Pager Dots',
+    route: 'PagerDots',
+    component: PagerDots,
     backIconDark: false,
     icon: () => <AntDesign name="smileo" {...DefaultIconProps} />,
   },
