@@ -29,6 +29,7 @@ import ExploreInterpolateWithStackedCards from '../animations/22-stacked-cards/A
 import CheckboxInteractions from '../animations/23-checkbox-interactions/App';
 import StoryListUI from '../animations/24-story-list/App';
 import PagerDots from '../animations/25-pager-dots/App';
+import AnimatedBarChart from '../animations/26-animated-bar-chart/App';
 
 import { Dimensions } from 'react-native';
 
@@ -226,6 +227,13 @@ const Screens = [
     name: 'Pager Dots',
     route: 'PagerDots',
     component: PagerDots,
+    backIconDark: false,
+    icon: () => <AntDesign name="smileo" {...DefaultIconProps} />,
+  },
+  {
+    name: 'Animated Bar Chart',
+    route: 'AnimatedBarChart',
+    component: AnimatedBarChart,
     backIconDark: false,
     icon: () => <AntDesign name="smileo" {...DefaultIconProps} />,
   },
