@@ -1,6 +1,9 @@
-import { FlatList, ImageProps } from 'react-native';
+import { ImageProps } from 'react-native';
 import { CircularCarouselListItem, ListItemWidth } from './list-item';
-import { useSharedValue } from 'react-native-reanimated';
+import Animated, {
+  useAnimatedScrollHandler,
+  useSharedValue,
+} from 'react-native-reanimated';
 
 type CircularCarouselProps = {
   data: ImageProps['source'][];
@@ -9,14 +12,18 @@ type CircularCarouselProps = {
 const CircularCarousel: React.FC<CircularCarouselProps> = ({ data }) => {
   const contentOffset = useSharedValue(0);
 
+  const scrollHandler = useAnimatedScrollHandler({
+    onScroll: (event) => {
+      contentOffset.value = event.contentOffset.x;
+    },
+  });
+
   return (
-    <FlatList
+    <Animated.FlatList
       data={data}
       keyExtractor={(_, index) => index.toString()}
       scrollEventThrottle={16} // 60fps -> 16ms (1000ms / 60fps)
-      onScroll={(event) => {
-        contentOffset.value = event.nativeEvent.contentOffset.x;
-      }}
+      onScroll={scrollHandler}
       pagingEnabled
       snapToInterval={ListItemWidth}
       style={{
@@ -29,8 +36,6 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({ data }) => {
         justifyContent: 'center',
         alignItems: 'center',
         paddingHorizontal: 1.5 * ListItemWidth,
-        // paddingRight: 1.5 * ListItemWidth,
-        // paddingLeft: 1.5 * ListItemWidth,
       }}
       horizontal
       renderItem={({ item, index }) => {
