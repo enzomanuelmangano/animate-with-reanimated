@@ -33,7 +33,7 @@ const Square: React.FC<SquareProps> = ({ index, progress }) => {
     }
 
     if (progress.value > 2 * Math.PI) {
-      return withTiming((index - N) * SQUARE_SIZE);
+      return withTiming((index - N + 1) * SQUARE_SIZE);
     }
 
     return withTiming(-index * SQUARE_SIZE);
